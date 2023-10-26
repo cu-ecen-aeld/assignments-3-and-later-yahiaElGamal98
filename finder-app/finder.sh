@@ -9,6 +9,7 @@ if [ $# -eq 2 ]; then
 		x=$( grep -l -r "${searchstr}" * | wc -l )
 		y=$( grep -r "${searchstr}" * | wc -l )
 		echo "The number of files are $x and the number of matching lines are $y"
+		exit 0
 		
 	else
 		echo "${filesdir} DOESN'T EXIST!"
